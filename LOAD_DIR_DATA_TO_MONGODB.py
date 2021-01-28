@@ -5,13 +5,13 @@ import json
 from pymongo import MongoClient
 
 print("Conneting to MongoDB Atlas ......")
-client = MongoClient("mongodb+srv://nizam:lsbg2020@roadlytics.x6cpt.mongodb.net/roadlytics_testDB?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://")
 print("Connection Sucessful ...........")
-db = client.get_database('roadlytics_testDB')
+db = client.get_database('xxx_testDB')
 collection = db.tracker2
 
 
-path = '/home/nizam/roly_lastest_data' # Directory path where the staging data is present
+path = 'xxx' # Directory path where the staging data is present
 
 
 print("Total number of files: ",len(os.listdir(path)))
